@@ -1,5 +1,6 @@
 import React from "react";
 import superagent from "superagent";
+import { Link } from "react-router-dom";
 
 
 
@@ -20,7 +21,6 @@ export default class extends React.Component {
         this.setState({
             movieList
         });
-        console.log(this.state)
     };
 
     render() {
@@ -52,8 +52,8 @@ const MovieItem = ({ advanceRate, advanceRateRank, id, posterUrl, title }) => {
     return (
         <div>
             <h3>{title}</h3>
-            <a href={'detail/' + id}>
-                <img alt="" width="150" src={posterUrl} /></a>
+            <Link to={'detail/' + id}>
+                <img alt="" width="150" src={posterUrl} /></Link>
             <div>예매율: {advanceRate}</div>
             <div>예매율 순위 : {advanceRateRank}</div>
         </div >
