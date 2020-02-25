@@ -7,9 +7,6 @@ const Home = () => {
             <div>
                 <a href="/movie/list"> 영화 리스트</a>
             </div>
-            <div>
-                <a href="/movie/detail/1">영화 상세 페이지 </a>
-            </div>
         </div>
     );
 };
