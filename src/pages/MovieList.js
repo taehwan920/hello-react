@@ -51,8 +51,7 @@ export default class extends React.Component {
 const MovieItem = ({ advanceRate, advanceRateRank, id, posterUrl, title }) => {
     return (
         <div>
-            <h3>{title}</h3>
-            <Link to={'detail/' + id}>
+            <Link to={'detail/' + id}><h3>{title}</h3>
                 <img alt="" width="150" src={posterUrl} /></Link>
             <div>예매율: {advanceRate}</div>
             <div>예매율 순위 : {advanceRateRank}</div>
